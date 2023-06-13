@@ -35,7 +35,7 @@ export class AppService {
     // Perform operations to retrieve data
     const data = {
       message: 'Success!',
-      value: "User A has logged in",
+      value: "Disbursement Success!",
     };
     return data;
   }
