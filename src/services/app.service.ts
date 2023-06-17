@@ -5,9 +5,7 @@ import { lastValueFrom } from 'rxjs';
 import { BaseApiResponse } from 'src/models/dto/base.api.response';
 import { ChargeTransactionRequest } from 'src/models/dto/charge.transaction.mt.request';
 import { InvoiceData } from 'src/models/invoice.model';
-import { Base64Converter } from 'src/shared/base64.converter';
 import { DisbursementRequestDto } from './../models/dto/disburse.mt.request';
-import axios from 'axios';
 import midtransAxiosInstance from 'src/config/axios.config';
 import { Customer } from 'src/models/customer.model';
 import { TrackingDataRequest } from 'src/models/tracking.user.model';
@@ -16,8 +14,7 @@ import { TrackingDataRequest } from 'src/models/tracking.user.model';
 @Injectable()
 export class AppService {
   constructor(@Inject('CLIENT_PROXY') private readonly clientProxy: ClientProxy, 
-                private readonly configService: ConfigService,
-                private readonly base64Converter: Base64Converter
+                private readonly configService: ConfigService
               ) {}
 
   async createDisbursement(req: DisbursementRequestDto){
