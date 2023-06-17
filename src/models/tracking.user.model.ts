@@ -1,14 +1,14 @@
-import { IsString } from 'class-validator';
+import { IsNumber, IsString, isNumber } from 'class-validator';
 
 export class TrackingDataRequest {
-  @IsString()
-  TrackRequestId: number;
+  @IsNumber()
+  id: number;
 
-  @IsString()
-  Price: string;
+  @IsNumber()
+  price: number;
 
-  @IsString()
-  Quantity: string;
+  @IsNumber()
+  quantity: number;
 
   @IsString()
   name: string;

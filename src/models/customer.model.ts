@@ -2,16 +2,16 @@ import { IsString } from 'class-validator';
 
 export class Customer {
   @IsString()
-  Email: string;
+  email: string;
 
   @IsString()
-  FirstName: string;
+  first_name: string;
 
   @IsString()
-  LastName: string;
+  last_name: string;
 
   @IsString()
-  PhoneNumber: string;
+  phone_number: string;
 
   
 }

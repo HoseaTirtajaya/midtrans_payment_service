@@ -1,5 +1,6 @@
 import axios, { AxiosInstance } from 'axios';
 
+require('dotenv').config();
 const midtransAxiosInstance: AxiosInstance = axios.create({
   baseURL: process.env.MIDTRANS_UAT_BASEURL, // Replace with your base URL
   headers: {

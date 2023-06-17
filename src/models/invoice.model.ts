@@ -3,8 +3,8 @@ import { IsNumber, IsString, isString } from 'class-validator';
 export class InvoiceData {
 
     @IsString()
-    OrderId: string;
+    order_id: string;
 
     @IsNumber()
-    GrossAmount: number;
+    gross_amount: number;
 }

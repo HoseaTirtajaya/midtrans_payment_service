@@ -9,9 +9,9 @@ export class ChargeTransactionRequest {
   payment_type: string;
 
   bank_transfer: ChargeBankRequest;
-  InvoiceData: InvoiceData;
-  CustomerData: Customer;
-  TrackDataRequest: TrackingDataRequest;
+  transaction_details: InvoiceData;
+  customer_details: Customer;
+  item_details: TrackingDataRequest[];
 
   // Include other properties as per your requirements
 }
